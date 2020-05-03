@@ -276,9 +276,37 @@
           </div>
         </div>
       </article>
+
       <button id="question-button" class="question-button">
         <i class="fas fa-question-circle"></i>
       </button>
+      
+      <div id="send-email-modal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span id="send-email-modal-close" class="close">&times;</span>
+          <h3>Have question? Feel free to ask</h3>
+          <label for="email">E-mail</label>
+          <input
+            name="email"
+            id="modal-email"
+            type="text"
+            placeholder="leave your e-mail here"
+          >
+          <label fro="message">Question</label>
+          <textarea
+            name="message"
+            id="modal-message"
+            type="text"
+            placeholder="leave your question here"
+          ></textarea>
+          <div class="send-button-wrapper">
+            <a id="send-button" href="#"><span>Send</span></a>
+          </div>
+        </div>
+      
+      </div>
     </main>
   </body>
 </html>
