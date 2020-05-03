@@ -1,3 +1,180 @@
 .avatar {
   border-radius: 50%;
 }
+
+.question-button {
+  border-radius: 50%;
+  margin: 10px;
+  right: 0;
+  position: fixed;
+  bottom: 20px;
+}
+
+/* Add shaking animation to question button */
+.question-button:hover {
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+.fa-question-circle {
+  font-size: 5em;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4); 
+}
+
+/* Modal Content main */
+.modal-content {
+  max-width: 1000px;
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 60%;
+  border-color: midnightblue;
+  border-width: 10px;
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Modal Content input */
+.modal-content > input[type=text], .modal-content > select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Modal Content input && textarea */
+.modal-content > input[type=text],
+.modal-content > textarea[type=text] {
+  width: 100%;
+  background-color: #ccc;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Modal Content input && textarea hover */
+.modal-content > input[type=text]:hover,
+.modal-content > textarea[type=text]:hover {
+  background-color: midnightblue;
+  opacity: 0.5;
+}
+
+/* Modal Content textarea */
+.modal-content > textarea[type=text], .modal-content > select {
+  min-height: 15rem;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.modal > .modal-content > div {
+  border-radius: 5px;
+}
+
+/* Sumbit button wrapper */ 
+.send-button-wrapper {
+  position: relative;
+  height: 100px;
+}
+
+/* Sumbit button main */ 
+.send-button-wrapper > a {
+  position: absolute;
+  top: 50%;
+  margin: 0;
+  display: block;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  line-height: 40px;
+  font-size: 18px;
+  font-family: sans-serif;
+  text-decoration: none;
+  color: #333;
+  border: 2px solid #333;
+  letter-spacing: 2px;
+  text-align: center;
+  transition: all .35s;
+}
+
+.send-button-wrapper > a,
+.send-button-wrapper > span {
+  position: relative;
+  z-index: 2;
+}
+
+/* Sumbit button animation */ 
+.send-button-wrapper > a:after{
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #ff003b;
+  transition: all .35s;
+}
+
+a:hover{
+  color: #fff;
+}
+
+a:hover:after{
+  width: 100%;
+}
