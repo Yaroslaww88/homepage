@@ -2,9 +2,13 @@
 <html>
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Résumé</title>
     <link rel="stylesheet" href="https://volodymyrkushnir.com/assets/stylesheets/base.css">
     <link rel="stylesheet" href="./app.css">
+    <script src="https://kit.fontawesome.com/3b05efd972.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.0.slim.js" integrity="sha256-sCexhaKpAfuqulKjtSY7V9H7QT0TCN90H+Y5NlmqOUE=" crossorigin="anonymous"></script>
+    <script src="./main.js"></script>
   </head>
   <body>
     <main>
@@ -153,8 +157,8 @@
                       <p><em>February 2019</em></p>
                         <ul>
                           <li class="details">
-                            <input type="checkbox" id="olympiad-1">
-                            <label for="olympiad-1" class="summary">
+                            <input type="checkbox" id="olympiad-2">
+                            <label for="olympiad-2" class="summary">
                               Take part in my last shool <strong>olympiad</strong> in informatics
                             </label>
                             <div>
@@ -272,6 +276,38 @@
           </div>
         </div>
       </article>
+
+      <button id="question-button" class="question-button">
+        <i class="fas fa-question-circle"></i>
+      </button>
+      
+      <div id="send-email-modal" class="modal">
+
+        <div class="modal-content">
+          <span id="send-email-modal-close" class="close">&times;</span>
+          <h3>Have question? Feel free to ask</h3>
+          <label for="email">E-mail</label>
+          <input
+            name="email"
+            id="modal-email"
+            type="text"
+            placeholder="leave your e-mail here"
+          >
+          <label fro="message">Question</label>
+          <textarea
+            name="message"
+            id="modal-message"
+            type="text"
+            placeholder="leave your question here"
+          ></textarea>
+
+          <div class="send-button-wrapper">
+            <a id="send-button"><span>Send</span></a>
+          </div>
+        </div>
+      
+      </div>
+
     </main>
   </body>
 </html>
