@@ -178,11 +178,11 @@
   transition: all 0.35s;
 }
 
-a:hover {
+.send-button-wrapper > a:hover {
   color: #fff;
 }
 
-a:hover::after {
+.send-button-wrapper > a:hover::after {
   width: 100%;
 }
 
