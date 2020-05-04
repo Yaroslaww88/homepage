@@ -94,7 +94,7 @@
 
 /* Modal Content input && textarea */
 .modal-content > input[type=text],
-.modal-content > textarea[type=text] {
+.modal-content > textarea {
   width: 100%;
   background-color: #ccc;
   color: white;
@@ -107,13 +107,13 @@
 
 /* Modal Content input && textarea hover */
 .modal-content > input[type=text]:hover,
-.modal-content > textarea[type=text]:hover {
+.modal-content > textarea:hover {
   background-color: midnightblue;
   opacity: 0.5;
 }
 
 /* Modal Content textarea */
-.modal-content > textarea[type=text], .modal-content > select {
+.modal-content > textarea, .modal-content > select {
   min-height: 15rem;
   width: 100%;
   padding: 12px 20px;
@@ -177,4 +177,8 @@ a:hover{
 
 a:hover:after{
   width: 100%;
+}
+
+#modal-message {
+  width:100%;
 }
