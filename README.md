@@ -1,5 +1,5 @@
 # Homepage
-My very own personal website. Basically this is just a résumé
+My very own personal website. Basically this is just a résumé.
 
 ## Description
 This project is just a static website using some jQuery.
